@@ -1166,9 +1166,9 @@ header {
     /* left: 7vw; */
   }
 
-  main, #table#table{
+  /* main, #table#table{
     padding: 0 7vw;
-  }
+  } */
 
   .hero{
     background-size: 100%;
@@ -1259,7 +1259,7 @@ header {
     font-size: 20px;
   }
 
-  footer a{
+  footer a:not(.co-credit){
     font-size: 32px;
   }
 
