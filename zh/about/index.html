@@ -39,7 +39,21 @@
 		<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&display=swap" rel="stylesheet"> -->
     
     <link rel="stylesheet" href="/src/css/app.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+      body{
+        background-size: auto 50%;
+        background-position: 55% 0%;
+      }
+
+      @media only screen and (min-width: 1020px){
+        body{
+          background-size: auto 130vw;
+          background-position: 55% 0%;
+        }
+      }
+      
+    </style>
+    <!-- <link rel="stylesheet" href="/src/css/swiper.css"> -->
   </head>
 
   <body class="preload" data-barba="wrapper">
@@ -64,82 +78,74 @@
         
         <div class="flex comingsoon">
           <div class="ill">
-            <img src="/src/illustration/cookie-min.png" alt=""/>
+            <img src="/src/illustration/pika-min.png" alt=""/>
           </div>
           <div class="cs--text">
-            <h2 class="grad">Una vita indimenticabile con i nostri compagni pelosi</h2>
-            <p>I nostri cuccioli ormai fanno parte della famiglia e noi come padroni, o meglio genitori, dovremmo offrire il meglio a loro. Petlab ha come obiettivo proprio aiutarvi vivere meglio insieme.<br><br>—— Petlab</p>
+            <h2 class="grad">愿毛孩得到一切最好的</h2>
+            <p>Petlab团队利用科技和设计给毛孩儿和家长们的生活带来便捷，提供价值，好让彼此更好的互相陪伴~<br><br>—— Petlab</p>
           </div>
-          <a href="mailto:info@petlab.io" class="btn cta neu dark" id="contact"><span>Salutaci!</span></a>
+          <a href="mailto:info@petlab.io" class="btn cta neu dark" id="contact"><span>这里放什么呢</span></a>
         </div>
 
         <div class="flex">
 
           <div class="cs--text">
-            <h2 class="grad">I nostri Serivizi</h2>
-            <p>Al momento abbiamo sede in Italia, siamo un team formato da persone provenienti da vari paesi con identità diverse: designer, programmatori, imprenditori, ma tutti amanti degli animali.</p>
+            <h2 class="grad">产品与服务</h2>
+            <p>Petlab的宗旨即满足您和您的毛孩儿的一切需求，在我们直观的用户界面上将所有宠物主可能需要的产品与服务一一呈现。</p>
           </div>
           <div class="slider-container">
-            <div class="slider services">
-              <div class="swiper-wrapper">
-                <a href="" class="service polygon-parent swiper-slide" >
-                  <h4>Prodotti Selezionati</h4>
-                  <p>Facilisi elit mi id mollis per quisque adipiscing condimentum parturient purus a primis hac dictumst odi.</p>
-                </a>
-                <a href="" class="service polygon-parent swiper-slide">
-                  <h4>Servizi Vicino a Te</h4>
-                  <p>Facilisi elit mi id mollis per quisque adipiscing condimentum parturient purus a primis hac dictumst odi.</p>
-                </a>
-                <a href="" class="service polygon-parent swiper-slide">
-                  <h4>Identità Virtuale</h4>
-                  <p>Facilisi elit mi id mollis per quisque adipiscing condimentum parturient purus a primis hac dictumst odi.</p>
-                </a>
-                <a href="" class="service polygon-parent swiper-slide">
-                  <h4>Blog</h4>
-                  <p>Facilisi elit mi id mollis per quisque adipiscing condimentum parturient purus a primis hac dictumst odi.</p>
-                </a>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
+            <!-- <div class="slider services"> -->
+
+                <div class="service polygon-parent swiper-slide" >
+                  <h4>精选产品</h4>
+                  <p class="small">根据质量、设计和可用性从各国精挑细选的产品</p>
+                </div>
+                <div class="service polygon-parent swiper-slide">
+                  <h4>资源整合</h4>
+                  <p class="small">按用户位置提供所有与宠物相关的服务，例如兽医/保姆/美容/狗公园/训练师</p>
+                </div>
+                <div class="service polygon-parent swiper-slide">
+                  <h4>线上身份证</h4>
+                  <p class="small">Petlab将为您的爱宠提供带有二维码的项圈以防止宠物走失， 二维码内包含了可随时编辑的网页及宠物信息，帮助您的爱宠回家</p>
+                </div>
+                <div class="service polygon-parent swiper-slide">
+                  <h4>自媒体博客</h4>
+                  <p class="small">Petlab为家长们提供定期宠物新闻，小贴士，教程和产品测评，让您轻松找到各类所需的宠物知识及最适合您的产品，让您对爱宠的方方面面了如指掌</p>
+                </div>
+                <div style="width: 24px;"></div>
+
+              <!-- <div class="swiper-pagination"></div> -->
+            <!-- </div> -->
           </div>
           <!-- <a href="mailto:info@petlab.io" class="btn neu" id="contact"><span>Salutaci!</span></a> -->
         </div>
 
         <div class="flex">
           <div class="ill">
-            <img src="/src/illustration/pika-min.png" alt=""/>
+            <img src="/src/illustration/cookie-min.png" alt=""/>
           </div>
           <div class="cs--text">
-            <h2 class="grad">Il nostro Team</h2>
-            <p>Al momento abbiamo sede in Italia, siamo un team formato da persone provenienti da vari paesi con identità diverse: designer, programmatori, imprenditori, ma tutti amanti degli animali.</p>
+            <h2 class="grad">Petlab 团队</h2>
+            <p>Petlab 团队由来自不同国家，不同专业的人组成：设计师，程序员，创业者 但我们皆是宠物爱好者！</p>
           </div>
-          <a href="mailto:info@petlab.io" class="btn neu btn-iii" id="contact"><span>Salutaci!</span></a>
+          <a href="mailto:info@petlab.io" class="btn neu btn-i" id="contact"><span>Say 个 Hi?</span></a>
         </div>
       </div>
     </main>
 
     <footer id="footer">
-      <p style="color: var(--i);text-align: center;">© 2020 Petlab, developed by <a class="co-credit" href="https://minority.studio/?utm_source=referral&utm_medium=web&utm_campaign=petlab">Minority Studio</a></p>
+      <p style="color: var(--i); text-align: center;">© 2020 Petlab, developed by <a class="co-credit" href="https://minority.studio/?utm_source=referral&utm_medium=web&utm_campaign=petlab">少数MS</a></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
 
-    <script src="/src/js/essentials.js"></script>
+    <script src="/zh/src/js/essentials.js"></script>
     <script src="/src/js/app.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper('.services', {
-          slidesPerView: 3,
-          spaceBetween: 12,
-          centeredSlides: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-        });
-
-
+      window.addEventListener('load', () => {
+      
+      }, false);
     </script>
   </body>
 </html>

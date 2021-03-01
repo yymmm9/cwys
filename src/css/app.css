@@ -46,7 +46,7 @@
   /* backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px); */
 
-  background: var(--vi);
+  background: var(--v);
   z-index: 100;
 }
 
@@ -79,9 +79,9 @@ html, body {
 }
 
 body{
-  background-image: url(/src/media/intro-bg.svg);
-  background-size: auto 110%;
-  background-position: center;
+    background-image: url(/src/media/intro-bg.svg);
+    background-size: auto 170vw;
+    background-position: 50%;
 }
 
 main{
@@ -212,7 +212,7 @@ a{
   box-shadow: var(--title-text-shadow);
   border-radius: var(--radius);
   background-color: var(--yi);
-  padding: 12px 12px 4px;
+  padding: 12px 12px 12px;
   /* margin: 12px; */
 }
 
@@ -220,12 +220,37 @@ a{
   /* transform: rotate(3deg); */
   /* position: absolute; */
   text-align: left;
+  display: flex;
+
+    position: relative;
+    flex: 1 0 auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    justify-content: center;
+  /* width: fit-content; */
 }
 
 .slider-container{
-  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  /* position: relative; */
   margin-top: 24px;
-  /* margin: 12px -24px; */
+  /* overflow:hidden; */
+  margin: 12px -28px;
+  padding-bottom: 12px;
+}
+
+.swiper-slide{
+  /* width: calc((100vw - 24px)/2); */
+  margin-right: 12px;
+  flex: 0 0 auto;
+  max-width: 180px;
+}
+
+.swiper-slide:first-of-type{
+  margin-left: 24px;
 }
 
 :root {
@@ -1138,9 +1163,16 @@ header {
     h1, h1 span {
       font-size: 46px;
     }
-    p {
+    p:not(.small){
+      max-width: 80%;
+    }
+    p:not(.left-aligned){
+      margin: auto;
+    }
+    p{
       font-size: 14px;
     }
+    
 }
 
 @media only screen and (min-width: 640px){
@@ -1157,6 +1189,17 @@ header {
   .col-r{
     margin-top: 48px;
     grid-column-start: auto;
+  }
+  h1, h2, h3{
+    margin-top: 32px;
+  }
+  p:not(.small){
+    font-size: 18px;
+    max-width: 70%;
+  }
+
+  .swiper-slide{
+    max-width: 220px;
   }
 }
 
@@ -1214,6 +1257,15 @@ header {
     margin: 10vw auto;
   }
 
+  .slider-container{
+    margin-top: 42px;
+    margin-bottom: 42px;
+  }
+
+  .btn{
+    margin: 24px 0;
+  }
+
   footer{
     /* margin-top: 10vw; */
     
@@ -1250,13 +1302,18 @@ header {
   h3 {
     font-size: 24px;
   }
+  
+  h4 {
+    font-size: 21px;
+  }
 
   span {
     font-size: 20px;
   }
 
-  p{
+  p:not(.small){
     font-size: 20px;
+    max-width: 600px;
   }
 
   footer a:not(.co-credit){
